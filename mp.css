@@ -4,91 +4,160 @@
 
 /* #region :root, * */
 :root {
-    /* Default Colors */
-    --backgroundColor: hsl(0, 0%, 12%);
-    --headerColor: hsl(0, 0%, 17%);
-    --textColor: white;
-    --redColor: hsl(10, 65%, 50%);
-    --greenColor: hsl(120, 65%, 40%);
-    --blueColor: hsl(210, 65%, 50%);
-    --grey1Color: hsl(0, 0%, 14%);
-    --grey2Color: hsl(0, 0%, 15%);
-    --grey3Color: hsl(0, 0%, 14%);
+	/* Default Colors */
+	--backgroundColor: hsl(0, 0%, 12%);
+	--headerColor: hsl(0, 0%, 17%);
+	--textColor: white;
+	--redColor: hsl(10, 65%, 50%);
+	--greenColor: hsl(120, 65%, 40%);
+	--blueColor: hsl(210, 65%, 50%);
+	--grey1Color: hsl(0, 0%, 14%);
+	--grey2Color: hsl(0, 0%, 15%);
+	--grey3Color: hsl(0, 0%, 14%);
 
-    /* Default Font Size */
-    font-size: 16px;
+	/* Default Font Size */
+	font-size: 16px;
 }
 
 * {
-    color: var(--textColor);
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: content-box;
-    padding: 0;
-    margin: .5px;
+	color: var(--textColor);
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: content-box;
+	padding: 0;
+	margin: .5px;
 }
 
 /* #endregion */
 
 /* #region Body */
 body {
-    background-color: var(--backgroundColor);
-    display: flex;
-    flex-direction: column;
+	background-color: var(--backgroundColor);
+	display: flex;
+	flex-direction: column;
 }
 
 /* #endregion */
 /* #region Navigation */
 header {
-    background-color: var(--headerColor);
-    padding-inline: 1rem;
-    border-bottom: 1px solid hsl(0, 0%, 50%);
+	background-color: var(--headerColor);
+	padding-inline: 1rem;
+	border-bottom: 1px solid hsl(0, 0%, 50%);
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header>h1 {
-    text-decoration: wavy;
+	text-decoration: wavy;
 }
 
 header>nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 /* #endregion */
 /* #region Main */
 main {
-    padding-inline: 2rem;
+	padding-inline: 2rem;
 }
 
 /* #endregion */
 
 /* #region Background Colors */
 .bgTransparent {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .bgWhite {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 
 .bgRed {
-    background-color: var(--redColor);
+	background-color: var(--redColor);
 }
 
 .bgGreen {
-    background-color: var(--greenColor);
+	background-color: var(--greenColor);
 }
 
 .bgBlue {
-    background-color: var(--blueColor);
+	background-color: var(--blueColor);
+}
+
+/* #endregion */
+
+/* #region Width */
+.widthP100 {
+	width: 100%;
+}
+
+.widthP75 {
+	width: 75%;
+}
+
+.widthP50 {
+	width: 50%;
+}
+
+.widthP25 {
+	width: 25%;
+}
+
+.widthVW100 {
+	width: 100vw;
+}
+
+.widthVW75 {
+	width: 75vw;
+}
+
+.widthVW50 {
+	width: 50vw;
+}
+
+.widthVW25 {
+	width: 25vw;
+}
+
+/* #endregion */
+/* #region Height */
+.heightP100 {
+	height: 100%;
+}
+
+.heightP75 {
+	height: 75%;
+}
+
+.heightP50 {
+	height: 50%;
+}
+
+.heightP25 {
+	height: 25%;
+}
+
+.heightVH100 {
+	height: 100vh;
+}
+
+.heightVH75 {
+	height: 75vh;
+}
+
+.heightVH50 {
+	height: 50vh;
+}
+
+.heightVH25 {
+	height: 25vh;
 }
 
 /* #endregion */
@@ -96,88 +165,92 @@ main {
 
 /* #region Text Color */
 .textRed {
-    color: var(--redColor);
+	color: var(--redColor);
 }
 
 .textGreen {
-    color: var(--greenColor);
+	color: var(--greenColor);
 }
 
 .textBlue {
-    color: var(--blueColor);
+	color: var(--blueColor);
 }
 
 /* #endregion */
 /* #region Text Size */
 .textSiz05 {
-    font-size: .5rem;
+	font-size: .5rem;
 }
 
 .textSiz1 {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 
 .textSiz15 {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .textSiz2 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 .textSiz3 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 .textSiz4 {
-    font-size: 4rem;
+	font-size: 4rem;
 }
 
 /* #endregion */
 /* #region Text Decoration */
+.tNoDeco {
+	text-decoration: none;
+}
+
 .tUndline {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .tOvrline {
-    text-decoration: overline;
+	text-decoration: overline;
 }
 
 .tLinthr {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 .tLinwavy {
-    text-decoration: wavy;
+	text-decoration: wavy;
 }
 
 /* #endregion */
 
 /* #region Border Colors */
 .bNone {
-    border: none;
+	border: none;
 }
 
 .bWhite {
-    border: 1px solid white;
+	border: 1px solid white;
 }
 
 .bRed {
-    border: 1px solid var(--redColor);
+	border: 1px solid var(--redColor);
 }
 
 .bGreen {
-    border: 1px solid var(--greenColor);
+	border: 1px solid var(--greenColor);
 }
 
 .bBlue {
-    border: 1px solid var(--blueColor);
+	border: 1px solid var(--blueColor);
 }
 
 /* #endregion */
 /* #region Border Decoration */
 .bRound {
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 /* #endregion */
@@ -185,16 +258,16 @@ main {
 
 /* #region button */
 button {
-    border: none;
-    padding: 0.3rem;
-    font-size: 1rem;
+	border: none;
+	padding: 0.3rem;
+	font-size: 1rem;
 }
 
 /* #endregion */
 /* #region a */
 a {
-    padding: 0.3rem;
-    font-size: 1rem;
+	padding: 0.3rem;
+	font-size: 1rem;
 }
 
 /* #endregion */
@@ -203,13 +276,13 @@ a {
 button:hover,
 a:hover,
 input[type=checkbox] {
-    cursor: pointer;
-    filter: brightness(140%);
+	cursor: pointer;
+	filter: brightness(140%);
 }
 
 button:disabled,
 input:disabled {
-    filter: brightness(60%);
+	filter: brightness(60%);
 }
 
 /* #endregion */
@@ -217,253 +290,253 @@ input:disabled {
 /* #region Padding */
 /* Padding */
 .pad1 {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 .pad2 {
-    padding: 2rem;
+	padding: 2rem;
 }
 
 .pad3 {
-    padding: 3rem;
+	padding: 3rem;
 }
 
 /* Padding Top */
 .padTop1 {
-    padding-top: 1rem;
+	padding-top: 1rem;
 }
 
 .padTop2 {
-    padding-top: 2rem;
+	padding-top: 2rem;
 }
 
 .padTop3 {
-    padding-top: 2rem;
+	padding-top: 2rem;
 }
 
 /* Padding Bottom */
 .padBot1 {
-    padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .padBot2 {
-    padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 .padBot3 {
-    padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 /* Padding Left */
 .padLeft1 {
-    padding-left: 1rem;
+	padding-left: 1rem;
 }
 
 .padLeft2 {
-    padding-left: 2rem;
+	padding-left: 2rem;
 }
 
 .padLeft3 {
-    padding-left: 2rem;
+	padding-left: 2rem;
 }
 
 /* Padding Right */
 .padRight1 {
-    padding-right: 1rem;
+	padding-right: 1rem;
 }
 
 .padRight2 {
-    padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 .padRight3 {
-    padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 /* Padding Block */
 .padBlock1 {
-    padding-block: 1rem;
+	padding-block: 1rem;
 }
 
 .padBlock2 {
-    padding-block: 2rem;
+	padding-block: 2rem;
 }
 
 .padBlock3 {
-    padding-block: 3rem;
+	padding-block: 3rem;
 }
 
 /* Padding Inline */
 .padInlin1 {
-    padding-inline: 1rem;
+	padding-inline: 1rem;
 }
 
 .padInlin2 {
-    padding-inline: 2rem;
+	padding-inline: 2rem;
 }
 
 .padInlin3 {
-    padding-inline: 3rem;
+	padding-inline: 3rem;
 }
 
 /* #endregion */
 /* #region Margin */
 /* Margin */
 .mar1 {
-    margin: 1rem;
+	margin: 1rem;
 }
 
 .mar2 {
-    margin: 2rem;
+	margin: 2rem;
 }
 
 .mar3 {
-    margin: 3rem;
+	margin: 3rem;
 }
 
 /* Margin Top */
 .marTop1 {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .marTop2 {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .marTop3 {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 /* Margin Bottom */
 .marBot1 {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .marBot2 {
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .marBot3 {
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 /* Margin Left */
 .marLeft1 {
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .marLeft2 {
-    margin-left: 2rem;
+	margin-left: 2rem;
 }
 
 .marLeft3 {
-    margin-left: 2rem;
+	margin-left: 2rem;
 }
 
 /* Margin Right */
 .marRight1 {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .marRight2 {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 .marRight3 {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 /* Margin Block */
 .marBlock1 {
-    margin-block: 1rem;
+	margin-block: 1rem;
 }
 
 .marBlock2 {
-    margin-block: 2rem;
+	margin-block: 2rem;
 }
 
 .marBlock3 {
-    margin-block: 3rem;
+	margin-block: 3rem;
 }
 
 /* Margin Inline */
 .marInlin1 {
-    margin-inline: 1rem;
+	margin-inline: 1rem;
 }
 
 .marInlin2 {
-    margin-inline: 2rem;
+	margin-inline: 2rem;
 }
 
 .marInlin3 {
-    margin-inline: 3rem;
+	margin-inline: 3rem;
 }
 
 /* #endregion */
 
 /* #region Flex */
 .flexColumn {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    margin-block: .5rem;
+	margin-block: .5rem;
 }
 
 .flexRow {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 
-    margin-block: .5rem;
+	margin-block: .5rem;
 }
 
 /* #endregion */
 /* #region Justify Content */
 .justContLeft {
-    justify-content: left;
+	justify-content: left;
 }
 
 .justContRight {
-    justify-content: right;
+	justify-content: right;
 }
 
 .justContCenter {
-    justify-content: center;
+	justify-content: center;
 }
 
 .justSpacBet {
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .justSpacEv {
-    justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 /* #endregion */
 /* #region Align Items */
 .alignItemsCen {
-    align-items: center;
+	align-items: center;
 }
 
 .alignItemsStret {
-    align-items: stretch;
+	align-items: stretch;
 }
 
 /* #endregion */
 
 /* #region form */
 .formInput {
-    background-color: var(--grey1Color);
-    font-size: 1rem;
-    padding: .3rem;
+	background-color: var(--grey1Color);
+	font-size: 1rem;
+	padding: .3rem;
 }
 
 .formInput[type="checkbox"],
 .formInput[type="radio"] {
-    width: .8rem;
-    height: .8rem;
-    padding: .3rem;
-    margin-inline: .4rem;
-    accent-color: var(--grey1Color);
+	width: .8rem;
+	height: .8rem;
+	padding: .3rem;
+	margin-inline: .4rem;
+	accent-color: var(--grey1Color);
 }
 
 /* #endregion */
