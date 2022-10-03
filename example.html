@@ -2,138 +2,303 @@
 <html lang="en">
 
 <head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="mp.css">
-		<title>Example</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mp.css">
+	<title>Example</title>
 </head>
 
 <body>
-		<header>
-				<h1>Example Page for CSS</h1>
-				<nav>
-						<a href="" class="bgRed bRound">Link A</a>
-						<a href="" class="bgGreen bRound">Link B</a>
-						<a href="" class="bgBlue bRound">Link C</a>
+	<header>
+		<h1>Example Page for CSS</h1>
+		<button id="open" type="button" class="button bgTransparent bRed bRound">Open all</button>
+		<nav>
+			<a href="" class="bgRed bRound">Link A</a>
+			<a href="" class="bgGreen bRound">Link B</a>
+			<a href="" class="bgBlue bRound">Link C</a>
 
-						<a href="" class="textRed">Link A</a>
-						<a href="" class="textGreen">Link B</a>
-						<a href="" class="textBlue">Link C</a>
-				</nav>
-		</header>
+			<a href="" class="textRed">Link A</a>
+			<a href="" class="textGreen">Link B</a>
+			<a href="" class="textBlue">Link C</a>
+		</nav>
+	</header>
 
-		<main class="pad1">
-				<article class="bWhite pad1 bRound">
-						<h1>Button</h1>
-						<hr>
-						<section class="padTop1">
-								<details>
-										<summary>Normal Buttons</summary>
-										<p>
-												<button type="button" class="button bgTransparent">Transparent Button</button>
-												<button type="button" class="button bgWhite">White Button</button>
-												<button type="button" class="button bgRed">Red Button</button>
-												<button type="button" class="button bgGreen">Green Button</button>
-												<button type="button" class="button bgBlue">Blue Button</button>
-										</p>
-								</details>
+	<main class="pad1 grid111">
+		<article>
+			<h1>Button</h1>
+			<hr>
+			<section>
+				<details>
+					<summary>Normal Buttons</summary>
+					<p>
+						<button type="button" class="button bgTransparent">Transparent Button</button>
+						<button type="button" class="button bgWhite">White Button</button>
+						<button type="button" class="button bgRed">Red Button</button>
+						<button type="button" class="button bgGreen">Green Button</button>
+						<button type="button" class="button bgBlue">Blue Button</button>
+					</p>
+				</details>
 
-								<details>
-										<summary>Round Buttons</summary>
-										<p>
-												<button type="button" class="button bgRed bRound">Red Button</button>
-												<button type="button" class="button bgGreen bRound">Green Button</button>
-												<button type="button" class="button bgBlue bRound">Blue Button</button>
-										</p>
-								</details>
+				<details>
+					<summary>Round Buttons</summary>
+					<p>
+						<button type="button" class="button bgRed bRound">Red Button</button>
+						<button type="button" class="button bgGreen bRound">Green Button</button>
+						<button type="button" class="button bgBlue bRound">Blue Button</button>
+					</p>
+				</details>
 
-								<details>
-										<summary>Border Buttons</summary>
-										<p>
-												<button type="button" class="button bWhite bgTransparent">White Button</button>
-												<button type="button" class="button bRed bgTransparent">Red Button</button>
-												<button type="button" class="button bGreen bgTransparent">Green Button</button>
-												<button type="button" class="button bBlue bgTransparent">Blue Button</button>
-										</p>
-								</details>
+				<details>
+					<summary>Border Buttons</summary>
+					<p>
+						<button type="button" class="button bWhite bgTransparent">White Button</button>
+						<button type="button" class="button bRed bgTransparent">Red Button</button>
+						<button type="button" class="button bGreen bgTransparent">Green Button</button>
+						<button type="button" class="button bBlue bgTransparent">Blue Button</button>
+					</p>
+				</details>
 
-								<details>
-										<summary>Disabled Buttons</summary>
-										<p>
-												<button type="button" class="button bWhite bgTransparent" disabled>White Button</button>
-												<button type="button" class="button bRed bgTransparent" disabled>Red Button</button>
-												<button type="button" class="button bGreen bgTransparent" disabled>Green Button</button>
-												<button type="button" class="button bBlue bgTransparent" disabled>Blue Button</button>
-										</p>
-								</details>
-						</section>
-				</article>
+				<details>
+					<summary>Disabled Buttons</summary>
+					<p>
+						<button type="button" class="button bWhite bgTransparent" disabled>White Button</button>
+						<button type="button" class="button bRed bgTransparent" disabled>Red Button</button>
+						<button type="button" class="button bGreen bgTransparent" disabled>Green Button</button>
+						<button type="button" class="button bBlue bgTransparent" disabled>Blue Button</button>
+					</p>
+				</details>
+			</section>
+		</article>
 
-				<article class="bWhite pad1 bRound">
-						<h1>Form</h1>
-						<hr>
-						<details open>
-								<summary>Form example</summary>
-								<!-- Form -->
-								<form class="bWhite pad1">
-										<div class="flexRow">
-												<h1>Testform</h1>
-										</div>
-										<!-- Text -->
-										<div class="flexColumn">
-												<label for="textbox">Textbox</label>
-												<input class="formInput" id="textbox" type="text">
-										</div>
-										<!-- Disabled Text -->
-										<div class="flexColumn">
-												<label for="distextbox">Disabled Textbox</label>
-												<input class="formInput" id="distextbox" type="text" disabled>
-										</div>
-										<!-- Password -->
-										<div class="flexColumn">
-												<label for="passwordbox">Password</label>
-												<input class="formInput" id="passwordbox" type="password" placeholder="...">
-										</div>
-										<!-- Select -->
-										<div class="flexColumn">
-												<label for="selectbox">Select</label>
-												<select class="formInput" id="selectbox">
-														<option>First</option>
-														<option>Second</option>
-														<option>Third</option>
-												</select>
-										</div>
-										<!-- Checkbox -->
-										<div class="flexRow">
-												<input class="formInput" id="checkbox1" type="checkbox">
-												<label for="checkbox1">Checkbox</label>
-										</div>
-										<div class="flexRow">
-												<label for="checkbox2">Checkbox</label>
-												<input class="formInput" id="checkbox2" type="checkbox">
-										</div>
-										<!-- Radiobutton -->
-										<div class="flexRow justContLeft">
-												<label for="radio1">10</label>
-												<input class="formInput" type="radio" id="radio1" name="radiovalue">
-										</div>
-										<div class="flexRow justContCenter">
-												<label for="radio2">15</label>
-												<input class="formInput" type="radio" id="radio2" name="radiovalue">
-										</div>
-										<div class="flexRow justContRight">
-												<label for="radio3">20</label>
-												<input class="formInput" type="radio" id="radio3" name="radiovalue">
-										</div>
-										<!-- Submit -->
-										<div class="flexColumn">
-												<button class="button bgTransparent bBlue bRound textSiz15" type="submit">Login</button>
-										</div>
-								</form>
-						</details>
-				</article>
-		</main>
+		<article>
+			<h1>Form</h1>
+			<hr>
+			<details>
+				<summary>Form example</summary>
+				<!-- Form -->
+				<form class="bWhite pad1">
+					<div class="flexRow">
+						<h1>Testform</h1>
+					</div>
+					<!-- Text -->
+					<div class="flexColumn">
+						<label for="textbox">Textbox</label>
+						<input class="formInput" id="textbox" type="text">
+					</div>
+					<!-- Disabled Text -->
+					<div class="flexColumn">
+						<label for="distextbox">Disabled Textbox</label>
+						<input class="formInput" id="distextbox" type="text" disabled>
+					</div>
+					<!-- Password -->
+					<div class="flexColumn">
+						<label for="passwordbox">Password</label>
+						<input class="formInput" id="passwordbox" type="password" placeholder="...">
+					</div>
+					<!-- Select -->
+					<div class="flexColumn">
+						<label for="selectbox">Select</label>
+						<select class="formInput" id="selectbox">
+							<option>First</option>
+							<option>Second</option>
+							<option>Third</option>
+						</select>
+					</div>
+					<!-- Checkbox -->
+					<div class="flexRow">
+						<input class="formInput" id="checkbox1" type="checkbox">
+						<label for="checkbox1">Checkbox</label>
+					</div>
+					<div class="flexRow">
+						<label for="checkbox2">Checkbox</label>
+						<input class="formInput" id="checkbox2" type="checkbox">
+					</div>
+					<!-- Radiobutton -->
+					<div class="flexRow justContLeft">
+						<label for="radio1">10</label>
+						<input class="formInput" type="radio" id="radio1" name="radiovalue">
+					</div>
+					<div class="flexRow justContCenter">
+						<label for="radio2">15</label>
+						<input class="formInput" type="radio" id="radio2" name="radiovalue">
+					</div>
+					<div class="flexRow justContRight">
+						<label for="radio3">20</label>
+						<input class="formInput" type="radio" id="radio3" name="radiovalue">
+					</div>
+					<!-- Submit -->
+					<div class="flexColumn">
+						<button class="button bgTransparent bBlue bRound textSiz15" type="submit">Login</button>
+					</div>
+				</form>
+			</details>
+		</article>
+
+		<article>
+			<h1>Grid 2 Row</h1>
+			<hr>
+			<section>
+
+				<details>
+					<summary>1-9</summary>
+					<div class="grid19">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>2-8</summary>
+					<div class="grid28">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>3-7</summary>
+					<div class="grid37">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>4-6</summary>
+					<div class="grid46">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>5-5</summary>
+					<div class="grid55">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>6-4</summary>
+					<div class="grid64">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>7-3</summary>
+					<div class="grid73">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>8-2</summary>
+					<div class="grid82">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+
+				<details>
+					<summary>9-1</summary>
+					<div class="grid91">
+						<div class="bBlue pad1">
+							Test
+						</div>
+						<div class="bRed pad1">
+							Test2
+						</div>
+					</div>
+				</details>
+			</section>
+		</article>
+
+		<article>
+			<h1>Grid 3 Row</h1>
+			<hr>
+			<details>
+				<summary>1-1-1</summary>
+				<div class="grid111">
+					<div class="bRed pad1">
+						Test
+					</div>
+					<div class="bGreen pad1">
+						Test2
+					</div>
+					<div class="bBlue pad1">
+						Test3
+					</div>
+				</div>
+			</details>
+
+			<details>
+				<summary>05-10-05</summary>
+				<div class="grid05105">
+					<div class="bRed pad1">
+						Test
+					</div>
+					<div class="bGreen pad1">
+						Test2
+					</div>
+					<div class="bBlue pad1">
+						Test3
+					</div>
+				</div>
+			</details>
+		</article>
+	</main>
+	<script>
+		var opener = document.getElementById("open");
+		var unfold = false;
+		opener.onclick = () => {
+			if (unfold === false) {
+				unfold = true; document.querySelectorAll('details').forEach((element) => {
+					element.setAttribute("open", "true");
+				})
+			} else {
+				unfold = false; document.querySelectorAll('details').forEach((element) => {
+					element.removeAttribute("open");
+				})
+			}
+		}
+	</script>
 </body>
 
 </html>
